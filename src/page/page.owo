@@ -1,0 +1,220 @@
+<template lang="pug">
+.home
+  .nav-bar
+    .w1200.clear
+      img.logo.fl(src="@|logo.png|")
+      .menu.fr
+        span.menu-item
+          a(href="#") 政策
+        span.menu-item
+          a(href="#") 服务
+        span.menu-item
+          a(href="#") 活动
+        span.button-item.active
+          a(href="#") 登陆
+        span.button-item
+          a(href="#") 注册
+  .show-box
+    plug(_name="module12" _src="https://template.owo.ink/c20b264b2eea099f.owo")
+    .show-info
+      h2 人才政策速览
+      a(href="#")
+        h4 标题一
+        p 法律通常是指由社会认可国家确认立法机关制定规范的行为规则，并由国家强制力(主要是司法机关)保证[1] 实施的。
+      a(href="#")
+        h4 标题一
+        p 法律通常是指由社会认可国家确认立法机关制定规范的行为规则，并由国家强制力(主要是司法机关)保证[1] 实施的。
+      a(href="#")
+        h4 标题一
+        p 法律通常是指由社会认可国家确认立法机关制定规范的行为规则，并由国家强制力(主要是司法机关)保证[1] 实施的。
+      a.more(href="#") 查看更多
+  .w1200
+    .title-bar 热门地区推荐
+    .card-box
+      .card-box-item.clear
+        .left.fl
+          img(src="http://www.people.com.cn/NMediaFile/2021/0810/MAIN202108101501512518722184535.jpg" width="260" height="170")
+          h2 北京市海淀区
+          .info-list
+            span 高科技企业
+            span 名校云集
+            span 交通便利
+        ul.right.fl
+          li.clear
+            img.fl(src="@|show-logo.png|")
+            .right-info.fr
+              h3 小米集团
+              p 上市公司｜电商平台、智能硬件
+          li.clear
+            img.fl(src="@|show-logo.png|")
+            .right-info.fr
+              h3 小米集团
+              p 上市公司｜电商平台、智能硬件
+          li.clear
+            img.fl(src="@|show-logo.png|")
+            .right-info.fr
+              h3 小米集团
+              p 上市公司｜电商平台、智能硬件
+          li.clear
+            img.fl(src="@|show-logo.png|")
+            .right-info.fr
+              h3 小米集团
+              p 上市公司｜电商平台、智能硬件
+</template>
+
+<script>
+  module.exports = {
+
+  }
+</script>
+
+
+<style lang="less">
+.page {
+  background-color: #f9f9fa;
+}
+.nav-bar {
+  line-height: 100px;
+  height: 120px;
+  padding: 10px 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .button-item {
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 18px;
+  }
+  .button-item.active {
+    background-color: #1c9bf4;
+    color: white;
+    a {
+      color: white;
+    }
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+.menu-item {
+  font-size: 22px;
+  margin: 0 20px;
+}
+.show-box {
+  position: relative;
+}
+.show-info {
+  position: absolute;
+  left: 0;
+  right: -620px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 440px;
+  z-index: 99;
+  text-align: left;
+  color: white;
+  width: 360px;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: rgba(0, 0, 0, 0.60);
+  padding: 15px;
+  p {
+    font-size: 14px;
+    text-indent: 2em;
+    line-height: 22px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: white;
+  }
+  a, a:hover {
+    text-decoration: none;
+  }
+  p {
+    margin-bottom: 10px;
+    color: #999999;
+  }
+  .more {
+    color: #999999;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  .more:hover {
+    color: white;
+  }
+}
+.title-bar {
+  background-image: url('@|title-bg.png|');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  line-height: 60px;
+  font-size: 24px;
+  color: #1c3688;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.card-box {
+  .card-box-item {
+    width: 600px;
+    .left {
+      height: 260px;
+      background-color: white;
+      img {
+        display: block;
+      }
+      h2 {
+        line-height: 52px;
+      }
+    }
+    .info-list {
+      span {
+        color: #1ac0b1;
+        border: 1px solid #ccc;
+        padding: 4px 5px;
+        margin: 0 5px;
+        border-radius: 2px;
+      }
+    }
+    ul.right {
+      width: 280px;
+      margin-left: 10px;
+      li {
+        height: 65px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        .right-info {
+          height: 100%;
+          margin-left: 5px;
+          padding: 8px 0;
+          h3 {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+</style>

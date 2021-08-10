@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- 页面的元信息 -->
+    <title>测试预览页面</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=1000, user-scalable=yes"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="filetype" content="1"/>
+    <meta name="publishedtype" content="1"/>
+    <meta name="pagetype" content="2"/>
+    <meta name="description" content="{TAG_59447_TAG}"/>
+    <meta name="keywords" content="{TAG_59446_TAG}"/>
+    <meta name="catalogs" content="{TAG_83943_TAG}"/>
+    
+      <!-- 页面主样式文件 -->
+      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
+      
+    <!-- 附属css文件 -->
+    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="https://cunchu.site/owo/style/idangerous.swiper2.7.6.css" charset="utf-8">
+      
+  </head>
+  <body>
+    
+    <!-- 页面[page]-->
+    <div class="home page" template="page" style="display: block;"><div class="nav-bar"><div class="w1200 clear"><img class="logo fl" src="./static/images/logo.png"><div class="menu fr"><span class="menu-item"><a href="#">政策</a></span><span class="menu-item"><a href="#">服务</a></span><span class="menu-item"><a href="#">活动</a></span><span class="button-item active"><a href="#">登陆</a></span><span class="button-item"><a href="#">注册</a></span></div></div></div><div class="show-box"><div class="swiper-box" template="module12"><div class="swiper-container clear"><div class="swiper-wrapper"><div class="swiper-slide"><a href="#"><img src="./static/images/show.png" width="550" height="320"></a></div></div><div class="pagination"></div></div></div><div class="show-info"><h2>人才政策速览</h2><a href="#"><h4>标题一</h4><p>法律通常是指由社会认可国家确认立法机关制定规范的行为规则，并由国家强制力(主要是司法机关)保证[1] 实施的。</p></a><a href="#"><h4>标题一</h4><p>法律通常是指由社会认可国家确认立法机关制定规范的行为规则，并由国家强制力(主要是司法机关)保证[1] 实施的。</p></a><a href="#"><h4>标题一</h4><p>法律通常是指由社会认可国家确认立法机关制定规范的行为规则，并由国家强制力(主要是司法机关)保证[1] 实施的。</p></a><a class="more" href="#">查看更多</a></div></div><div class="w1200"><div class="title-bar">热门地区推荐</div><div class="card-box"><div class="card-box-item clear"><div class="left fl"><img src="http://www.people.com.cn/NMediaFile/2021/0810/MAIN202108101501512518722184535.jpg" width="260" height="170"><h2>北京市海淀区</h2><div class="info-list"><span>高科技企业</span><span>名校云集</span><span>交通便利</span></div></div><ul class="right fl"><li class="clear"><img class="fl" src="./static/images/show-logo.png"><div class="right-info fr"><h3>小米集团</h3><p>上市公司｜电商平台、智能硬件</p></div></li><li class="clear"><img class="fl" src="./static/images/show-logo.png"><div class="right-info fr"><h3>小米集团</h3><p>上市公司｜电商平台、智能硬件</p></div></li><li class="clear"><img class="fl" src="./static/images/show-logo.png"><div class="right-info fr"><h3>小米集团</h3><p>上市公司｜电商平台、智能硬件</p></div></li><li class="clear"><img class="fl" src="./static/images/show-logo.png"><div class="right-info fr"><h3>小米集团</h3><p>上市公司｜电商平台、智能硬件</p></div></li></ul></div></div></div></div>
+    
+<!-- 框架script文件 -->
+<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+owo.script = {
+  "page": {
+    "template": {
+      "module12": {
+        "created": function created() {
+          var _this = this;
+
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this.$el.getElementsByClassName('swiper-container')[0], {
+              // pagination: this.$el.getElementsByClassName('pagination')[0],
+              loop: true,
+              autoplay: 3000,
+              paginationClickable: true
+            });
+          }, 0);
+        }
+      }
+    }
+  }
+};
+</script>
+
+    <script src="https://cunchu.site/owo/script/idangerous.swiper2.7.6.min.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
+
+  </body>
+</html>
